@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="question_array">
+        <item>@string/q5sandRocks</item>
+        <item>@string/q7popular</item>
+        <item>@string/q8touristic</item>
+        <item>@string/q9cultural</item>
+        <item>@string/q10tradition</item>
+        <item>@string/q11free</item>
+        <item>@string/q12hospitality</item>
+        <item>@string/q13inFamily</item>
+        <item>@string/q14overNight</item>
+        <item>@string/q15fastVisit</item>
+        <item>@string/q16closingTime</item>
+        <item>@string/q17park</item>
+        <item>@string/q18minimimServices</item>
+        <item>@string/q19roadServices</item>
+        <item>@string/q20publicTransport</item>
+        <item>@string/q21directCarArrival</item>
+        <item>@string/q22arrivalDifficulty</item>
+        <item>@string/q23nightLife</item>
+        <item>@string/q24recreational</item>
+        <item>@string/q25mountainSports</item>
+        <item>@string/q26waterSports</item>
+    </string-array>
+</resources>

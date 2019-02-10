@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/side_drawer_nav_bar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tb_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
+        <LinearLayout
+            android:id="@+id/ll_toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/great_dimen"
+                android:layout_marginBottom="@dimen/basic_dimen"
+                android:layout_marginLeft="@dimen/great_dimen"
+                android:layout_marginRight="@dimen/great_dimen"
+                android:paddingLeft="@dimen/small_dimen"
+                android:paddingRight="@dimen/small_dimen"
+                android:background="@drawable/edittext_round_corners"
+                android:textColorHint="@color/colorTextBack"
+                android:textColor="@color/colorBlack"
+                android:hint="Buscar"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/basic_dimen"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/btn_toolbarmain_1"
+                    layout="@layout/textview_menu"/>
+
+                <include
+                    android:id="@+id/btn_toolbarmain_2"
+                    layout="@layout/textview_menu"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>

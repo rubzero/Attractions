@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/green_border_frame"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_quiz_pre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/medium_dimen">
+
+        <TextView
+            android:id="@+id/lbl_quiz_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_dimen"
+            android:textColor="@color/colorGreen"
+            android:text="@string/questionnaire"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="@dimen/medium_dimen"/>
+
+        <TextView
+            android:id="@+id/lbl_quiz_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"
+            android:layout_marginBottom="@dimen/medium_dimen"/>
+
+        <Button
+            android:id="@+id/btn_quiz_start"
+            android:text="@string/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textColor="@color/colorGreen"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/small_dimen">
+
+        <TextView
+            android:id="@+id/lbl_quiz_question"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fr_dimen"
+            android:textSize="15dp"
+            android:textColor="@color/colorGreen"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="@dimen/small_dimen"
+            android:text="@string/q5sandRocks"/>
+
+        <RadioGroup
+            android:id="@+id/rg_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_dimen">
+
+            <RadioButton
+                android:id="@+id/r_quiz_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q5r1"/>
+            <RadioButton
+                android:id="@+id/r_quiz_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q5r2"/>
+            <RadioButton
+                android:id="@+id/r_quiz_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q5r3"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/basic_dimen"
+            android:layout_marginLeft="@dimen/basic_dimen">
+
+            <ImageButton
+                android:id="@+id/btn_quiz_previous"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/sv_dimen"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_marginRight="50dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_quiz_next"
+                android:layout_width="@dimen/sv_dimen"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

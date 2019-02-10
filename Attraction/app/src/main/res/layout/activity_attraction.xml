@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_attraction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttractionActivity">
+
+    <include
+        android:id="@+id/tb_attraction"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/lbl_attraction_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_attraction"
+        android:textSize="@dimen/medium_dimen"
+        android:textColor="@color/colorGreen"
+        android:layout_marginLeft="@dimen/small_dimen"
+        android:layout_marginTop="@dimen/basic_dimen"/>
+
+    <ImageButton
+        android:id="@+id/btn_attraction_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tb_attraction"
+        android:layout_marginRight="@dimen/basic_dimen__"
+        android:layout_marginTop="@dimen/__basic_dimen"
+        android:src="@drawable/ic_event"/>
+
+    <LinearLayout
+        android:id="@+id/ll_attraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_attraction_calendar"
+        android:layout_margin="@dimen/intra_pixels"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/u_dimen_">
+                <TextView
+                    android:id="@+id/lbl_attraction_municipality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/lbl_attraction_zone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/lbl_attraction_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_UserAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gl_attraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_dimen"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/v_attraction_line"
+        android:rowCount="2"
+        android:columnCount="6">
+    </GridLayout>
+
+    <View
+        android:id="@+id/v_attraction_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/u_dimen_"
+        android:layout_below="@id/ll_attraction"
+        android:layout_marginTop="@dimen/small_dimen"
+        android:layout_marginBottom="@dimen/small_dimen"
+        android:layout_marginRight="@dimen/intra_pixels"
+        android:layout_marginLeft="@dimen/intra_pixels"
+        android:background="@drawable/line" />
+
+    <WebView
+        android:id="@+id/wv_webLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/more"
+        android:layout_below="@id/v_attraction_line"/>
+
+    <ImageButton
+        android:id="@+id/btn_attraction_forward"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/sv_dimen"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/small_dimen"
+        android:layout_marginBottom="@dimen/small_dimen"
+        android:src="@drawable/ic_arrow_forward"/>
+
+    <ImageButton
+        android:id="@+id/btn_attraction_back"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/sv_dimen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/small_dimen"
+        android:layout_marginBottom="@dimen/small_dimen"
+        android:src="@drawable/ic_arrow_back"/>
+
+</RelativeLayout>

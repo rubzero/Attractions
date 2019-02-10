@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/green_border_frame"
+    tools:context=".UserFormActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_userform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/medium_dimen"
+        android:layout_marginBottom="@dimen/small_dimen"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/txt_userform_user"
+            layout="@layout/edittext_input"/>
+
+        <Button
+            android:id="@+id/btn_userform_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/half_great_dimen"
+            android:layout_gravity="right"
+            android:text="@string/accept"
+            android:textColor="@color/colorGreen"/>
+
+    </LinearLayout>
+
+</LinearLayout>

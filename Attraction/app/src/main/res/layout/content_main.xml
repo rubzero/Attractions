@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/toolbar_main">
+
+
+    <RelativeLayout
+        android:id="@+id/mLLayoutNextVisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/colortransition">
+
+        <LinearLayout
+            android:id="@+id/nextVisitName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/basic_dimen"
+            android:layout_marginTop="@dimen/basic_dimen"
+            android:layout_marginBottom="@dimen/basic_dimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nextVisit"/>
+            <TextView
+                android:id="@+id/lblNextVisitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_contentmain_maximize"
+            android:layout_marginRight="@dimen/basic_dimen"
+            android:layout_marginTop="@dimen/basic_dimen"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"/>
+
+            <TextView
+                android:id="@+id/lblDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_contentmain_maximize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/basic_dimen"
+            android:src="@drawable/ic_unfold_more"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_contentmain_slideview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thh_dimen"
+        android:orientation="vertical"
+        android:layout_below="@id/mLLayoutNextVisit"
+        android:background="@color/colorTextBack">
+
+        <View
+            android:id="@+id/line_contentmain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/u_dimen"
+            android:background="@color/colorGray"
+            android:layout_marginTop="@dimen/u_dimen"
+            android:layout_marginBottom="@dimen/basic_dimen" />
+
+        <ImageView
+            android:id="@+id/iv_contentmain_nextvisit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sv_dimen"
+            android:layout_below="@id/line_contentmain"
+            android:adjustViewBounds="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/basic_dimen"
+            android:layout_marginLeft="@dimen/basic_dimen"
+            android:layout_below="@id/iv_contentmain_nextvisit">
+
+            <TextView
+                android:id="@+id/lbl_contentmain_comment1"
+                android:layout_width="@dimen/th_dimen"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/basic_dimen"
+                android:layout_marginBottom="@dimen/basic_dimen"
+                android:text=""/>
+            <TextView
+                android:id="@+id/lbl_contentmain_comment2"
+                android:layout_width="@dimen/th_dimen"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_contentmain_comment1"
+                android:layout_marginBottom="@dimen/basic_dimen"
+                android:text=""/>
+            <TextView
+                android:id="@+id/lbl_contentmain_comment3"
+                android:layout_width="@dimen/th_dimen"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_contentmain_comment2"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/txt_contentmain_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/btn_contentmain_removecomment"
+                android:layout_marginRight="@dimen/basic_dimen"
+                android:layout_marginBottom="@dimen/basic_dimen"
+                android:maxLength="30"
+                android:hint="@string/addComment"
+                android:textSize="@dimen/half_great_dimen"/>
+
+            <ImageButton
+                android:id="@+id/btn_contentmain_addcomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/basic_dimen"
+                android:layout_marginBottom="@dimen/basic_dimen"
+                android:src="@drawable/ic_add"/>
+
+            <ImageButton
+                android:id="@+id/btn_contentmain_removecomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/basic_dimen"
+                android:layout_toLeftOf="@id/btn_contentmain_addcomment"
+                android:src="@drawable/ic_remove"/>
+
+            <RatingBar
+                style="?android:attr/ratingBarStyleIndicator"
+                android:id="@+id/rating_contentmain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/minus_half_dimen"
+                android:theme="@style/MyRatingBar"
+                android:isIndicator="false"
+                android:scaleX=".8"
+                android:scaleY=".8"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rating_contentmain"
+                android:text="@string/rateIt"
+                android:layout_marginRight="@dimen/small_dimen"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_contentmain_monthrec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ff_dimen"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/small_dimen"
+        android:paddingTop="@dimen/small_dimen"
+        android:textSize="@dimen/half_great_dimen"
+        android:text="@string/nameV"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/side_drawer_nav_bar"/>
+
+</RelativeLayout>

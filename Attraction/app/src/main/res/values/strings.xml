@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">Attraction</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="btnValidate">Validar</string>
+    <string name="showPassword">Mostrar contraseña</string>
+    <string name="register"><u>Registrarme...</u></string>
+    <string name="password2">Repetir contraseña</string>
+    <string name="registerlbl">Registro</string>
+    <string name="loginlbl">Login</string>
+    <string name="name">GuideCanaria</string>
+    <string name="nameV">GuideCanaria - Beta Version 1.0</string>
+    <string name="version">V 1.0.0</string>
+    <string name="all">Todo</string>
+    <string name="quiz">Quiz</string>
+    <string name="favourites">Mi lista</string>
+    <string name="openDrawer">Abrir</string>
+    <string name="closeDrawer">Cerrar</string>
+    <string name="titleDrawer">Area personal</string>
+    <string name="municipality">Municipio:</string>
+    <string name="zone">Zona:</string>
+    <string name="area">Terreno:</string>
+    <string name="next">Siguiente</string>
+    <string name="north">Norte</string>
+
+    <string name="q0start">Cuestionario de ayuda</string>
+    <string name="q1municipality">¿Quieres visitar algún municipio en específico?</string>
+    <string name="q2zone">¿Tienes preferencia de zona?</string>
+    <string name="q3area">¿Por dónde te apetece moverte?</string>
+    <string name="q4beachMountain">¿Playa o montaña?</string>
+    <string name="q5sandRocks">¿Eres más de arena o de piedra?</string>
+    <string name="q6central">¿Prefieres un sitio céntrico?</string>
+    <string name="q7popular">¿Cuánto te importa la popularidad del lugar?</string>
+    <string name="q8touristic">Las facilidades de las zonas turísticas...</string>
+    <string name="q9cultural">Museos, exposiciones...</string>
+    <string name="q10tradition">¡Hoy quiero sentirme como un canarión!</string>
+    <string name="q11free">Quizá el dinero sea un problema...</string>
+    <string name="q12hospitality">¿Quieres estar cerca de complejos de hostelería?</string>
+    <string name="q13inFamily">¿Buscas una experiencia en familia?</string>
+    <string name="q14overNight">¡A pecnoctar!</string>
+    <string name="q15fastVisit">¿Quieres una visita rápida?</string>
+    <string name="q16closingTime">¿Con horario de cierre?</string>
+    <string name="q17park">Quiero tener parques temáticos cerca.</string>
+    <string name="q18minimimServices">Mejor tener los servicios mínimos cerca...</string>
+    <string name="q19roadServices">¡Travesía en coche! Necesito servicio de carretera.</string>
+    <string name="q20publicTransport">¿Usarás transporte público?</string>
+    <string name="q21directCarArrival">Un parking cerca, por favor.</string>
+    <string name="q22arrivalDifficulty">Dificultad de llegada.</string>
+    <string name="q23nightLife">¿Te importa la vida nocturna en este destino?</string>
+    <string name="q24recreational">De picnic.</string>
+    <string name="q25mountainSports">¿Te gustan los deportes de montaña?</string>
+    <string name="q26waterSports">¿Te gustan los deportes acuáticos?</string>
+
+    <string name="q5r1">Arena, sin duda</string>
+    <string name="q5r2">Como un cangrejo sobre piedra</string>
+    <string name="q5r3">No sabría decir</string>
+
+    <string name="q6r1">Lo mayor posible</string>
+    <string name="q6r2">Ni tanto ni tan poco</string>
+    <string name="q6r3">Prefiero un sitio tranquilo</string>
+
+    <string name="q7r1">Son muy importantes</string>
+    <string name="q7r2">Están bien...</string>
+    <string name="q7r3">Prefiero algo más natural</string>
+
+    <string name="q8r1">Son indispensables</string>
+    <string name="q8r2">Quizás tenga algo de tiempo</string>
+    <string name="q8r3">Prefiero otras atracciones</string>
+
+    <string name="q9r1">¡Papas con mojo por favor!</string>
+    <string name="q9r2">En su justa medida</string>
+    <string name="q9r3">Quizás otro día</string>
+
+    <string name="q10r1">Desde luego que sí...</string>
+    <string name="q10r2">Podría permitirme gastar algo</string>
+    <string name="q10r3">Clink! Take my money!</string>
+
+    <string name="q11r1">Sí, hoy necesitaré un hotel</string>
+    <string name="q11r2">Nunca viene mal</string>
+    <string name="q11r3">No es algo a tener en cuenta</string>
+
+    <string name="q12r1">Hoy me llevo a los peques</string>
+    <string name="q12r2">No cierro el abanico</string>
+    <string name="q12r3">Yo, mis botas, y la montaña</string>
+
+    <string name="q13r1">Me apasiona dormir bajo las estrellas</string>
+    <string name="q13r2">Quizá necesite anti-mosquitos</string>
+    <string name="q13r3">¿Qué es ese ruido? Mejor volvemos</string>
+
+    <string name="q14r1">Sí, será de camino</string>
+    <string name="q14r2">Tengo algo de tiempo entre destinos</string>
+    <string name="q14r3">Será mi única visita para hoy</string>
+
+    <string name="q15r1">Cuando se acabe, se acabó...</string>
+    <string name="q15r2">Al menos que cierre tarde</string>
+    <string name="q15r3">Sin límite</string>
+
+    <string name="q16r1">Sí, es primordial</string>
+    <string name="q16r2">Necesito un plan B</string>
+    <string name="q16r3">No vengo a Gran Canaria para esto</string>
+
+    <string name="q17r1">¡No quiero morir!</string>
+    <string name="q17r2">A una distancia razonable</string>
+    <string name="q17r3">No me preocupa, estoy preparado</string>
+
+    <string name="q18r1">Te dije que echaras gasolina...</string>
+    <string name="q18r2">Si acaso para un snack</string>
+    <string name="q18r3">No esta vez</string>
+
+    <string name="q19r1">Hoy en guagüita</string>
+    <string name="q19r2">Sí, aunque no me importa caminar un poco</string>
+    <string name="q19r3">¡Yo conduzco!</string>
+
+    <string name="q20r1">En la puertita, mi niño</string>
+    <string name="q20r2">A una distancia razonable</string>
+    <string name="q20r3">Me da igual con tal de llegar</string>
+
+    <string name="q21r1">Sencillo</string>
+    <string name="q21r2">Tampoco me quita el sueño</string>
+    <string name="q21r3">Bah... En peores me he visto</string>
+
+    <string name="q22r1">All night long!</string>
+    <string name="q22r2">Bueno, si me lían...</string>
+    <string name="q22r3">Quizá otro día</string>
+
+    <string name="q23r1">Un día de relax</string>
+    <string name="q23r2">Podría ser interesante</string>
+    <string name="q23r3">Prefiero algo más movido</string>
+
+    <string name="q24r1">Me apasionan</string>
+    <string name="q24r2">Podría atreverme</string>
+    <string name="q24r3">No me interesan</string>
+
+    <string name="q25r1">Me encantaría</string>
+    <string name="q25r2">A lo mejor me animo</string>
+    <string name="q25r3">Tampoco me interesan...</string>
+
+    <string name="instructions">Te haremos una serie de preguntas para ayudarte a
+    encontrar tu próximo destino ideal. ¿Empezamos?</string>
+    <string name="go">¡Vamos!</string>
+    <string name="questionnaire">Cuestionario turístico</string>
+    <string name="restrictQuestion">Antes de empezar, ¿quieres hacer algunas restricciones?</string>
+    <string name="results">Compatibles contigo</string>
+    <string name="displayAll">Mostrar todo</string>
+    <string name="maximize">Ver todo</string>
+    <string name="filter">Filtrar salida</string>
+    <string name="nextVisit">Siguiente destino:</string>
+    <string name="month">Mayo</string>
+
+    <string name="month1">Enero</string>
+    <string name="month2">Febrero</string>
+    <string name="month3">Marzo</string>
+    <string name="month4">Abril</string>
+    <string name="month5">Mayo</string>
+    <string name="month6">Junio</string>
+    <string name="month7">Julio</string>
+    <string name="month8">Agosto</string>
+    <string name="month9">Septiembre</string>
+    <string name="month10">Octubre</string>
+    <string name="month11">Noviembre</string>
+    <string name="month12">Diciembre</string>
+    <string name="date">Fecha:</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="legendBeach">Zona de playa</string>
+    <string name="legendMountain">Zona de montaña</string>
+    <string name="legendMoney">Gratuito</string>
+    <string name="legendHotel">Hoteles y restaurantes cerca</string>
+    <string name="legendInFamily">Familiar</string>
+    <string name="legendNightLife">Alta actividad nocturna</string>
+    <string name="legendNotClosing">Sin hora de cierre</string>
+    <string name="legendPublicTransport">Abundante transporte público</string>
+    <string name="legendShopping">Comercios y servicios mínimos</string>
+    <string name="legendPopular">Popular y frecuentado</string>
+    <string name="start">Empezar</string>
+    <string name="more">Saber más...</string>
+    <string name="wrongCredentials">Usuario y/o contraseña incorrectos.</string>
+    <string name="emptyField">Los campos no pueden estar vacíos.</string>
+    <string name="email">Email</string>
+    <string name="wrongEmail">Formato de email inválido</string>
+    <string name="weakPasswordError">Contraseña debe contener 8 caracteres, una mayúscula,
+        al menos un número y libre de espacios en blanco.</string>
+    <string name="duplicatedEmail">El email ya existe.</string>
+    <string name="notCollisionPassword">Las contraseñas no coinciden.</string>
+    <string name="btnEnter">Entrar</string>
+    <string name="btnRegister">Registro</string>
+    <string name="loginAdvice">¿Te gusta GuideCanaria? Prueba a registrarte para tener una mejor experiencia.</string>
+    <string name="guest">Invitado</string>
+    <string name="guestEmail">invitado@guidecanaria.com</string>
+    <string name="guestToast">No es necesaria autenticación como invitado.</string>
+    <string name="addComment">Añade algun comentario a la visita.</string>
+    <string name="monthRec">Recomendación del mes...</string>
+    <string name="rec">Puerto de las Nieves, Agaete.</string>
+    <string name="rateIt">¡Valora el lugar!</string>
+    <string name="userName">Usuario</string>
+    <string name="notMatchingUser">Usuario debe contener de 3 a 15 caracteres. - y _ son los únicos valores especiales permitidos.</string>
+    <string name="accept">Aceptar</string>
+    <string name="newUserName">Nuevo usuario</string>
+    <string name="guestToastProfile">Opción no disponible como invitado.</string>
+    <string name="userNamePattern">Nombre de usuario debe contener entre 3 y 15 caracteres. Solo se permite - y _ como valores especiales.</string>
+    <string name="addVisitToast">Programa primero una visita.</string>
+    <string name="userNameInvalid">Nombre de usuario no válido.</string>
+    <string name="wrongDate">Fecha no válida.</string>
+
+</resources>

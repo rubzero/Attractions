@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <include
+        android:id="@+id/tb_register"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/half_great_dimen"
+        android:layout_marginRight="@dimen/half_great_dimen">
+
+        <TextView
+            android:id="@+id/lbl_register_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ff_dimen"
+            android:text="@string/registerlbl"
+            android:paddingTop="@dimen/basic_dimen"
+            android:paddingLeft="@dimen/big_dimen"
+            android:theme="@style/formHeader"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/big_dimen">
+
+            <include
+                android:id="@+id/txt_register_userName"
+                layout="@layout/edittext_input"/>
+
+            <include
+                android:id="@+id/txt_register_userEmail"
+                layout="@layout/edittext_input"/>
+
+            <include
+                android:id="@+id/txt_register_password"
+                layout="@layout/edittext_input"/>
+
+            <include
+                android:id="@+id/txt_register_password2"
+                layout="@layout/edittext_input"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cb_register_showpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/showPassword"/>
+
+                <Button
+                    android:id="@+id/btn_register_validate"
+                    android:text="@string/btnValidate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorGreen"/>
+
+                <include
+                    android:id="@+id/lottie_register"
+                    layout="@layout/tick_animation"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
